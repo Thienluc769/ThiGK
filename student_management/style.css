@@ -1,0 +1,198 @@
+/* ======= CẤU HÌNH CHUNG ======= */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* ======= CONTAINER CHÍNH ======= */
+.container {
+    width: 60%;
+    margin: 40px auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* ======= TIÊU ĐỀ ======= */
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* ======= FORM NHẬP LIỆU ======= */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    font-size: 16px;
+    align-self: flex-start;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: #007BFF;
+    box-shadow: 0px 0px 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ======= BUTTON ======= */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* ======= BẢNG HIỂN THỊ DỮ LIỆU ======= */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: white;
+    text-transform: uppercase;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* ======= ẢNH SINH VIÊN ======= */
+img {
+    width: 300px;
+    /*height: 80px;*/
+    object-fit: cover;
+    /*border-radius: 50%;*/
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ======= LIÊN KẾT HÀNH ĐỘNG ======= */
+.action-links {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.action-links a {
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+}
+
+.edit-button {
+    background-color: #28a745;
+    color: white;
+}
+
+.edit-button:hover {
+    background-color: #218838;
+}
+
+.delete-button {
+    background-color: #dc3545;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #c82333;
+}
+
+.detail-button {
+    background-color: #ffc107;
+    color: black;
+}
+
+.detail-button:hover {
+    background-color: #e0a800;
+}
+
+/* ======= RESPONSIVE (Mobile) ======= */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .action-links a {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .navbar {
+        background-color: #222;
+        overflow: hidden;
+        padding: 10px 20px;
+    }
+    
+    .navbar a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 10px 15px;
+        display: inline-block;
+    }
+    
+    .navbar a:hover {
+        background-color: #444;
+        border-radius: 5px;
+    }
+    
+    
+}
